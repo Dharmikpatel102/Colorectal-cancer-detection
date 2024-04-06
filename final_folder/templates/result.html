@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Result</title>
+  <style>
+   img {
+  width: auto; /* Adjusts the width automatically to maintain aspect ratio */
+  height: 400px; /* Sets a fixed height for the image */
+  float: right; /* Aligns the image to the right side of its container */
+  border: 6px solid #2ECC71; /* Example: a solid green border, 3px thick */
+  box-shadow: 0px 0px 10px #888888; /* Optional: adds a shadow for better visibility */
+   position: absolute;
+        top: 287px; /* Adjust this value to position the image vertically */
+        right: 20px;
+}
+    .white-heading {
+            color: white;
+            /* Additional styles can be added here if needed */
+        }
+  </style>
+</head>
+<body>
+  <h1 class="white-heading"><b>Cancer Classification<b></h1>
+
+  <div>
+    <img src="{{ img_path }}" alt="Uploaded Image">
+  </div>
+
+  <div style="display: flex; align-items: center; color: white; ">
+    <h2 style="font-size: 24px; margin: 0; padding-right: 10px;">Predicted result:</h2>
+    <p style="font-size: 24px; margin: 0; font-style: italic;">{{ prediction }}</p>
+</div>
+
+</body>
+</html>
